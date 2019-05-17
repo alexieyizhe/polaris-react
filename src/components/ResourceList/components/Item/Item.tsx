@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {classNames} from '@shopify/react-utilities/styles';
 import {createUniqueIDFactory, noop} from '@shopify/javascript-utilities/other';
 import compose from '@shopify/react-compose';

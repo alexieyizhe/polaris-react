@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {MobileCancelMajorMonotone} from '@shopify/polaris-icons';
 import {classNames} from '@shopify/react-utilities/styles';
 import {CSSTransition} from 'react-transition-group';

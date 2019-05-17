@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {noop} from '@shopify/javascript-utilities/other';
 import {mountWithAppProvider, findByTestID, trigger} from 'test-utilities';
 import Resizer from '../Resizer';

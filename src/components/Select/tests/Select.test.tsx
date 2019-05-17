@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {ReactWrapper} from 'enzyme';
 import {noop} from '@shopify/javascript-utilities/other';
 import {InlineError} from 'components';

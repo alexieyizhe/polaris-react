@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {noop} from '@shopify/javascript-utilities/other';
 import {mountWithAppProvider, findByTestID} from 'test-utilities';
 import {Image, UnstyledLink} from 'components';

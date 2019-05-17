@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {PlusMinor} from '@shopify/polaris-icons';
 import {noop} from '@shopify/javascript-utilities/other';
 import {matchMedia} from '@shopify/jest-dom-mocks';
