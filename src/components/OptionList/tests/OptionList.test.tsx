@@ -107,7 +107,7 @@ describe('<OptionList />', () => {
     ];
 
     optionList.setProps({options: newOptions});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(newOptions, sections));
   });
@@ -135,7 +135,7 @@ describe('<OptionList />', () => {
     ];
 
     optionList.setProps({sections: newSections});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(options, newSections));
   });
@@ -174,7 +174,7 @@ describe('<OptionList />', () => {
     ];
 
     optionList.setProps({options: newOptions, sections: newSections});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(newOptions, newSections));
   });
@@ -186,7 +186,7 @@ describe('<OptionList />', () => {
     );
 
     optionList.setProps({options: undefined});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions([], sections));
   });
@@ -198,7 +198,7 @@ describe('<OptionList />', () => {
     );
 
     optionList.setProps({sections: undefined});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(options, []));
   });
@@ -225,7 +225,7 @@ describe('<OptionList />', () => {
     ];
 
     optionList.setProps({options: undefined, sections: newSections});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(undefined, newSections));
   });
@@ -248,7 +248,7 @@ describe('<OptionList />', () => {
     ];
 
     optionList.setProps({options: newOptions, sections: undefined});
-
+    optionList.update();
     const optionWrappers = optionList.find(Option);
     expect(optionWrappers).toHaveLength(totalOptions(newOptions, undefined));
   });
@@ -316,7 +316,7 @@ describe('<OptionList />', () => {
       ];
 
       optionList.setProps({options: newOptions});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(newOptions, sections));
     });
@@ -344,7 +344,7 @@ describe('<OptionList />', () => {
       ];
 
       optionList.setProps({sections: newSections});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(options, newSections));
     });
@@ -383,7 +383,7 @@ describe('<OptionList />', () => {
       ];
 
       optionList.setProps({options: newOptions, sections: newSections});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(
         totalOptions(newOptions, newSections),
@@ -397,7 +397,7 @@ describe('<OptionList />', () => {
       );
 
       optionList.setProps({options: undefined});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(undefined, sections));
     });
@@ -409,7 +409,7 @@ describe('<OptionList />', () => {
       );
 
       optionList.setProps({sections: undefined});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(options, undefined));
     });
@@ -436,7 +436,7 @@ describe('<OptionList />', () => {
       ];
 
       optionList.setProps({options: undefined, sections: newSections});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(undefined, newSections));
     });
@@ -459,7 +459,7 @@ describe('<OptionList />', () => {
       ];
 
       optionList.setProps({options: newOptions, sections: undefined});
-
+      optionList.update();
       const optionWrappers = optionList.find(Option);
       expect(optionWrappers).toHaveLength(totalOptions(newOptions, undefined));
     });
