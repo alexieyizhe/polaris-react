@@ -24,6 +24,7 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 - Add `box-shadow` to the `Banner` to make it more visible in Windows high contrast mode ([#1481](https://github.com/Shopify/polaris-react/pull/1481))
 - Add `box-shadow` to the `Card` to make it more visible in Windows high contrast mode ([#1524](https://github.com/Shopify/polaris-react/pull/1524))
 - Fixed UI regressions in `Navigation` component hover and active states ([#1551](https://github.com/Shopify/polaris-react/pull/1551))
+- Fixed `Banner` `title` overflowing when set to a single long word ([#1553](https://github.com/Shopify/polaris-react/pull/1553))
 
 ### Documentation
 
